@@ -1,1 +1,8 @@
-<h1>Show Restaurant</h1>
+<h2><%= @restaurant.name %></h2>
+<p><%= @restaurant.address %></p>
+<p><%= @restaurant.phone_number %></p>
+<p><%= @restaurant.category %></p>
+
+<%= link_to "Review", restaurant_reviews_path(@restaurant) %>
+<%= link_to "Create reviews", new_restaurant_review_path(@restaurant) %>
+

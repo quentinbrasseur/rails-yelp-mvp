@@ -1,1 +1,7 @@
 <h1>New review</h1>
+
+<%= simple_form_for [@restaurant, @review] do |f| %>
+  <%= f.input :content, error: 'Content is mandatory, please specify one'%>
+  <%= f.input :rating, error: 'Rating is mandatory, please specify one'%>
+  <%= f.button :submit %>
+<% end %>
